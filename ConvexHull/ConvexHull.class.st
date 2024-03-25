@@ -9,19 +9,21 @@ Class {
 
 { #category : #display }
 ConvexHull >> displayDistribution: points [
-	|c elements|
-
-	elements := points collect: [ :m | RSEllipse new size: 10; model: m ] as: RSGroup.
-	elements @ RSPopup.
-
-	c := RSCanvas new.
-	c addAll: elements.
-
-	RSGridLayout on: elements.
-
-	c @ RSCanvasController.
+	| classes p x y |
+	classes := Collection withAllSubclasses.
+	x := OrderedCollection new.
+	y := OrderedCollection new.
 	
-	^ c
+	points do: [ :each |
+		x add: (each x).
+		y add: (each y)
+	].
+	p := RSScatterPlot new x: x y: y.
+
+	p xlabel: 'x'.
+	p ylabel: 'y'.
+	p title: 'points distribution'.
+	^ p
 ]
 
 { #category : #convex }
