@@ -17,7 +17,7 @@ ConvexHull >> generateHull: points [
 	"generate the point we have to link to have the envelope convex"
 	|sortedPoints convexHull segment pointsWithoutIncline vect|
 	
-	points size < 3 ifTrue: [ Error signal: 'Convex HUll require at least 3 points' ].
+	points size < 3 ifTrue: [ Error signal: 'Convex Hull require at least 3 points' ].
 	
 	sortedPoints := self sortByAngle: points.
 	
