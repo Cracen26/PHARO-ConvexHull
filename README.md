@@ -1,5 +1,5 @@
 ### Convex Hull 
-A set of 5 points the generated convex hull composed by 4 segments.
+A set of 5 points generate convex hull composed by 4 segments based on [graham algorithm](https://muthu.co/understanding-graham-scan-algorithm-for-finding-the-convex-hull-of-a-set-of-points/).
 
 ```
 points := OrderedCollection new.
