@@ -1,9 +1,10 @@
 ### Load Package
 ```
 Metacello new
-	baseline: 'ConvexHull';
 	repository: 'github://Cracen26/PHARO-ConvexHull';
+	baseline: 'ConvexHull';
 	load
+
 ```
 
 ### Convex Hull 
