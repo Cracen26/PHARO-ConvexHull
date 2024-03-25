@@ -10,6 +10,5 @@ BaselineOfConvexHull >> baseline: spec [
 	
 	spec 
 		for: #common
-		do: [ spec package: 'ConvexHull'.
-			spec group: 'default' with: #('FileDialog')]
+		do: [ spec package: 'ConvexHull' ]
 ]
