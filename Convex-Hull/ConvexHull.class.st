@@ -9,23 +9,7 @@ Class {
 
 { #category : #display }
 ConvexHull >> displayDistribution: points [
-	| x y c p |
-	x := OrderedCollection new.
-	y := OrderedCollection new.
 	
-	1 to: 7 do: [ :each | 
-		x add: (points at: each) x.
-		y add: (points at: each) y.
-	].
-	c := RSChart new.
-	p := RSScatterPlot new x: x y: y.
-	p color: Color blue translucent.
-	c addPlot: p.
-
-	c addDecoration: (RSHorizontalTick new doNotUseNiceLabel asFloat: 3).
-	c addDecoration: RSVerticalTick new.
-
-	^c
 ]
 
 { #category : #convex }
