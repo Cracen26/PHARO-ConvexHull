@@ -11,3 +11,4 @@ cvx := ConvexHull new.
 
 cvx generateHull: points.
 ```
+![Playgroud](play.png)
