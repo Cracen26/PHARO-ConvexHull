@@ -1,3 +1,11 @@
+### Load Package
+```
+Metacello new
+	baseline: 'ConvexHull';
+	repository: 'github://Cracen26/PHARO-ConvexHull';
+	load
+```
+
 ### Convex Hull 
 A set of 5 points generate convex hull composed by 4 segments based on [graham algorithm](https://muthu.co/understanding-graham-scan-algorithm-for-finding-the-convex-hull-of-a-set-of-points/).
 
