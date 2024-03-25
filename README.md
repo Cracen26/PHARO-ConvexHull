@@ -22,4 +22,7 @@ cvx displayDistribution: points.
 
 cvx generateHull: points.
 ```
-![Playgroud](play.png)
+### Display points distribution 
+![Playgroud](distribution.png)
+### Hull Segments Generation
+![Playgroud](seg.png)
