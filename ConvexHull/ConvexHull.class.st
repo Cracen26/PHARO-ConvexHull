@@ -9,7 +9,19 @@ Class {
 
 { #category : #display }
 ConvexHull >> displayDistribution: points [
+	|c elements|
+
+	elements := points collect: [ :m | RSEllipse new size: 10; model: m ] as: RSGroup.
+	elements @ RSPopup.
+
+	c := RSCanvas new.
+	c addAll: elements.
+
+	RSGridLayout on: elements.
+
+	c @ RSCanvasController.
 	
+	^ c
 ]
 
 { #category : #convex }
