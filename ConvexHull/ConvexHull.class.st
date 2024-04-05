@@ -9,8 +9,7 @@ Class {
 
 { #category : #display }
 ConvexHull >> displayDistribution: points [
-	| classes p x y |
-	classes := Collection withAllSubclasses.
+	| p x y |
 	x := OrderedCollection new.
 	y := OrderedCollection new.
 	
